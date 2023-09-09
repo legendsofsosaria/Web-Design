@@ -66,39 +66,25 @@ main {
 	box-sizing: border-box;
 }
 
-#left-column {
+.main-column {
     float: left;
 	padding: 10px;
     border: 4px double #ccc;
     border-radius: 10px;
-    text-align: center;
-	margin-bottom: 40px;
+	text-align: center;
 }
 
-#right-column {
-    padding: 10px;
+#image-column {
+    padding: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .image-box img {
-    max-width: 100%; 
-    height: auto;
-}
-
-@media screen and (max-width:799px) {
-    #left-column {
-        width: 70%; 
-        float: none; 
-    }
-	
-	#right-column {
-		width: 30%; 
-        float: none; 
-	}
-	
-	.image-box img {
-		max-width: 100%; 
-		height: auto;
-	}
+    width: 120px; 
+    height: 155px;
 }
 
 .footer {
