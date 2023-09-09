@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+@font-face 
+{
+  font-family: 'LoversQuarrel';
+  src: url('Fonts/LoversQuarrel-Regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family: 'Megila';
+  src: url('Fonts/Megila.otf') format('truetype');
+}
+
+/*
+Author: Elizabeth Gress 
+Filename: styles.css
+
+*/
+
+/* =============================================
+	Background
+   =============================================
+*/
+
+.header h1 {
+	text-align: center;
+	border-style: double;
+	border-width: 3px;
+	border-color:#ffffde;
+    font-family: 'LoversQuarrel', sans-serif;
+	font-size: 100px;
+	font-weight: 300;
+	color: #ffffde;
+	margin-top: 0px;
+}
+
+body 
+{
+	text-align: center;
+    background-image: url("background.jpg");
+    background-color: #b3f0ff;
+	font-family: 'Megila', sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	color: #000000;
+}
+
+.content-box {
+  border: 4px double #ccc; 
+  padding: 5px; 
+  background-color: #f5f5f5; 
+  border-radius: 10px; 
+  margin-right: 30px; 
+  margin-left: 30px;
+  max-width: 800px;  
+}
+
+.content-wrapper {
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start;
+  border: 6px double #f5f5f5; 
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 80px; 
+  margin-left: 80px;
+  margin-top: -30px;
+}
+
+.image-box {
+  flex: 1;
+  align-items: center;     
+}
+
+.footer {
+	color: #ffffde;
+	text-align: center; 
+	font-size: 16px;
+}
+
+/* =============================================
+	Top Bar
+   =============================================
+*/
+
+nav {
+  text-align: center; 
+  margin-top: -70px;
+}
+/* Style list items (links) */
+.top-bar li {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+/* Style link text */
+.top-bar a {
+  text-decoration: none;
+  display: inline-block;
+  color: #ffff99; 
+  padding: 10px; 
+  font-size: 30px;
+}
+
+/* Style visited link text */
+.top-bar a:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #ffff99; 
+  padding: 10px; 
+  font-size: 30px;
+}
+
+/* Hover effect for links */
+.top-bar a:hover {
+  background-color: #35869b; 
+  border-radius: 5px;
+  color: #ffffde;  
+}
