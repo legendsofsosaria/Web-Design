@@ -23,72 +23,93 @@ Filename: styles.css
    =============================================
 */
 
-.header h1 {
-	text-align: center;
-	border-style: double;
-	border-width: 3px;
-	border-color:#ffffde;
-    font-family: 'LoversQuarrel', sans-serif;
-	font-size: 100px;
-	font-weight: 300;
-	color: #ffffde;
-	margin-top: 0px;
-}
-
-body 
-{
-	text-align: center;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Megila', sans-serif;
+    font-size: 2.6vw;
+    font-weight: 300;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-image: url("background.jpg");
     background-color: #b3f0ff;
-	font-family: 'Megila', sans-serif;
-	font-size: 24px;
-	font-weight: 300;
-	color: #000000;
 }
 
-.content-box {
-  border: 4px double #ccc; 
-  padding: 5px; 
-  background-color: #f5f5f5; 
-  border-radius: 10px; 
-  margin-right: 30px; 
-  margin-left: 30px;
-  box-sizing: border-box;
+.site-content {
+	width: 50%; 
+	padding: 5px;
+	margin: auto;
 }
 
-.content-wrapper {
-  display: flex; 
-  align-items: center; 
-  justify-content: flex-start;
-  border: 6px double #f5f5f5; 
-  border-radius: 10px;
-  padding: 20px;
-  margin-right: 80px; 
-  margin-left: 80px;
-  margin-top: -30px;
+.header h1 {
+    text-align: center;
+    border-style: double;
+    border-width: 3px;
+    border-color: #ffffde;
+    font-family: 'LoversQuarrel', sans-serif;
+    font-size: 8.8vw;
+    font-weight: 300;
+    color: #ffffde;
+    margin-top: 0;
 }
 
-.image-box {
-  flex: 1;
-  align-items: center;     
+nav {
+    text-align: center;
 }
 
-@media (max-width: 768px) {
-  .content-wrapper {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    margin-right: 30px; /* Reset margin for smaller screens */
-    margin-left: 30px; /* Reset margin for smaller screens */
-  }
+main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 960px;
+	box-sizing: border-box;
+}
 
-  .image-box {
-    flex: none; /* Reset flex property to control width on smaller screens */
-  }
+#left-column {
+    float: left;
+	padding: 10px;
+    border: 4px double #ccc;
+    border-radius: 10px;
+    text-align: center;
+	margin-bottom: 40px;
+}
+
+#right-column {
+    padding: 10px;
+}
+
+.image-box img {
+    max-width: 100%; 
+    height: auto;
+}
+
+@media screen and (max-width:799px) {
+    #left-column {
+        width: 70%; 
+        float: none; 
+    }
+	
+	#right-column {
+		width: 30%; 
+        float: none; 
+	}
+	
+	.image-box img {
+		max-width: 100%; 
+		height: auto;
+	}
 }
 
 .footer {
-	color: #ffffde;
-	text-align: center; 
-	font-size: 16px;
+    color: #ffffde;
+    text-align: center;
+    font-size: 1.2vw;
+    padding: 10px;
+    background-color: #000; 
+	border-style: double;
+    border-width: 3px;
+    border-color: #ffffde;
 }
 
 /* =============================================
@@ -97,8 +118,7 @@ body
 */
 
 nav {
-  text-align: center; 
-  margin-top: -70px;
+	text-align: center;
 }
 /* Style list items (links) */
 .top-bar li {
@@ -112,7 +132,7 @@ nav {
   display: inline-block;
   color: #ffff99; 
   padding: 10px; 
-  font-size: 30px;
+  font-size: 2.6vw;
 }
 
 /* Style visited link text */
@@ -121,7 +141,7 @@ nav {
   display: inline-block;
   color: #ffff99; 
   padding: 10px; 
-  font-size: 30px;
+  font-size: 2.6vw;
 }
 
 /* Hover effect for links */
