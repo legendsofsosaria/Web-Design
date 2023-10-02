@@ -9,7 +9,13 @@
 @font-face 
 {
   font-family: 'Megila';
-  src: url('Fonts/Megila.otf') format('truetype');
+  src: url('Fonts/Megila.otf') format('opentype');
+}
+
+@font-face 
+{
+  font-family: 'DancingScript';
+  src: url('Fonts/DancingScript.ttf') format('truetype');
 }
 
 /*
@@ -19,76 +25,45 @@ Filename: styles.css
 */
 
 /* =============================================
-	Background
+	Body & footer
    =============================================
 */
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Megila', sans-serif;
-    font-size: 2.6vw;
+    font-size: 2.0vw;
     font-weight: 300;
     color: #000000;
-    display: flex;
+    min-height: 100vh;
+    background-image: url("Images/background.jpg");
+    background-color: #b3f0ff;
+}
+
+.flex-layout {
+	display: flex;
 	display: -webkit-flex;
 	-webkit-flex-direction: column;
     flex-direction: column;
-    min-height: 100vh;
-    background-image: url("background.jpg");
-    background-color: #b3f0ff;
 }
 
 .site-content {
 	width: 50%; 
-	padding: 5px;
 	margin: auto;
 }
 
-.header h1 {
-    text-align: center;
-    border-style: double;
-    border-width: 3px;
-    border-color: #ffffde;
-    font-family: 'LoversQuarrel', sans-serif;
-    font-size: 8.8vw;
-    font-weight: 300;
-    color: #ffffde;
-    margin-top: 0;
-}
-
-nav {
-    text-align: center;
-}
-
 main {
-    padding: 20px;
     margin: 0 auto;
     max-width: 960px;
 	box-sizing: border-box;
 }
 
-.main-column {
-    float: left;
+.main-column, h2 {
 	padding: 10px;
     border: 4px double #ccc;
     border-radius: 10px;
 	text-align: center;
 }
-
-#image-column {
-    padding: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-.image-box img {
-    width: 120px; 
-    height: 155px;
-}
-
+	
 .footer {
     color: #ffffde;
     text-align: center;
@@ -97,7 +72,80 @@ main {
     background-color: #000; 
 	border-style: double;
     border-width: 3px;
-    border-color: #ffffde;
+    border-color: hsla(60, 100%, 94%, 0.3);
+}
+
+.drop-cap::first-letter {
+  font-size: 2em; 
+  margin-right: 0.1em; 
+  line-height: 1; 
+  color: rgba(255, 255, 230, 0.4);
+}
+
+/* =============================================
+	Headers
+   =============================================
+*/
+
+.header h1 {
+    text-align: center;
+    border-style: double;
+    border-width: 3px;
+    border-color: rgb(255, 255, 222);
+    font-family: 'LoversQuarrel', sans-serif;
+    font-size: 8.8vw;
+    font-weight: 300;
+    color: rgb(255, 255, 222);
+	margin: 0;
+}
+
+h2 {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+	font-family: 'DancingScript', sans-serif;
+	color: rgb(0, 96, 128);
+}
+
+/* =============================================
+	Images
+   =============================================
+*/
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto; 
+  }
+}
+
+#about-image {
+  width: 300px; 
+  height: auto; 
+  float: right; 
+  margin-right: 20px; 
+  transform: rotate(5deg) scale(0.9, 0.9);
+  box-shadow: rgb(101, 101, 101) 10px -10px 25px;
+}
+
+.image-box img {
+    width: 120px; 
+    height: 155px;
+	opacity: 0.6;
+}
+
+#image-column {
+    padding: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 /* =============================================
@@ -137,4 +185,38 @@ nav {
   background-color: #35869b; 
   border-radius: 5px;
   color: #ffffde;  
+}
+
+/* =============================================
+	Grids
+   =============================================
+*/
+
+#gallery-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin: 0 auto;
+}
+
+#gallery-item img {
+	max-width: 70%;
+	height: auto;
+	display: block; 
+	margin: 0; 
+	padding: 0; 
+}
+
+#flavor-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0 auto;
+}
+
+#flavor-item {
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 80px;
+	margin: 10px;
+	text-align: center;
 }
