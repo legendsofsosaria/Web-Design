@@ -5,3 +5,40 @@ Author: Elizabeth Gress
 Date: 09/18/2023
 */
 
+.flex-container {
+    display: flex;
+}
+
+fieldset {
+	padding: 10px 10px;
+	margin: 5px;
+	width: 30%;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.formSection {
+    padding: 10px;
+    margin: 5px;
+    width: 30%;
+}
+
+textarea, input {
+    width: 100%;
+}
+
+#cakeType select {
+    width: 100%; 
+    max-width: 100%; 
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .formRow {
+        margin-right: 0;
+    }
+}

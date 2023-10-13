@@ -69,15 +69,24 @@ main {
 	
 .footer {
     color: #ffffde;
-    text-align: center;
     font-size: 1.2vw;
     padding: 10px;
     background-color: #000; 
 	border-style: double;
     border-width: 3px;
     border-color: hsla(60, 100%, 94%, 0.3);
-	clear: right;
 	margin-top: 40px;
+	text-align: center;
+}
+
+#footer-box p {
+    float: left;
+}
+
+#footer-box a {
+	float: left;
+    margin-right: 10px;
+	width: 4%;
 }
 
 .drop-cap::first-letter {
