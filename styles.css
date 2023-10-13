@@ -84,15 +84,6 @@ main {
   color: rgba(255, 255, 230, 0.4);
 }
 
-#background-music {
-  display: block;
-  margin: 0 auto;
-}
-
-.audio-container {
-  text-align: center;
-}
-
 /* =============================================
 	Headers
    =============================================
@@ -128,20 +119,26 @@ h4 {
 }
 
 /* =============================================
+	Audio and Video
+   =============================================
+*/
+#background-music {
+  display: block;
+  margin: 0 auto;
+}
+
+.audio-container {
+  text-align: center;
+}
+
+/* =============================================
 	Images
    =============================================
 */
-
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-  }
-  
-  .grid-item img {
-    max-width: 100%;
-    height: auto; 
-  }
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 #about-image {
@@ -166,6 +163,18 @@ h4 {
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 460px) {
+  .gallery-item img {
+    max-width: 50%; 
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery-item img {
+    max-width: 70%; 
+  }
 }
 
 /* =============================================
@@ -215,21 +224,11 @@ nav {
 */
 
 #gallery-grid-container {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-gap: 10px;
-	margin: 0 0 20px 0;
-}
-
-.gallery-item img {
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
-
-.gallery-item {
-	width: 200px; 
-	height: auto; 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  max-width: 100%; /* Adjust the container width as needed */
+  margin: 0 auto;
 }
 
 #flavor-grid-container {
