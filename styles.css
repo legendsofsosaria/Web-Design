@@ -31,11 +31,11 @@ Filename: styles.css
 
 body {
     font-family: 'Megila', sans-serif;
-    font-size: 2.0vw;
+    font-size: 1.4vw;
     font-weight: 300;
     color: #000000;
     min-height: 100vh;
-    background-image: url("Images/background.jpg");
+    background-image: url("Assets/background.jpg");
     background-color: #b3f0ff;
 }
 
@@ -73,6 +73,8 @@ main {
 	border-style: double;
     border-width: 3px;
     border-color: hsla(60, 100%, 94%, 0.3);
+	clear: right;
+	margin-top: 40px;
 }
 
 .drop-cap::first-letter {
@@ -80,6 +82,15 @@ main {
   margin-right: 0.1em; 
   line-height: 1; 
   color: rgba(255, 255, 230, 0.4);
+}
+
+#background-music {
+  display: block;
+  margin: 0 auto;
+}
+
+.audio-container {
+  text-align: center;
 }
 
 /* =============================================
@@ -111,6 +122,11 @@ h3 {
 	padding: 10px;
 }
 
+h4 {
+	font-size: 2.5vw;
+	font-weight: normal;
+}
+
 /* =============================================
 	Images
    =============================================
@@ -132,9 +148,10 @@ h3 {
   width: 300px; 
   height: auto; 
   float: right; 
-  margin-right: 20px; 
+  margin: 0 20px 40px 0; 
   transform: rotate(5deg) scale(0.9, 0.9);
   box-shadow: rgb(101, 101, 101) 10px -10px 25px;
+  max-width: 100%;
 }
 
 .image-box img {
@@ -158,7 +175,9 @@ h3 {
 
 nav {
 	text-align: center;
+	margin-bottom: 60px;
 }
+
 /* Style list items (links) */
 .top-bar li {
   display: inline-block;
@@ -196,18 +215,21 @@ nav {
 */
 
 #gallery-grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 10px;
+	margin: 0 0 20px 0;
 }
 
-#gallery-item img {
-	max-width: 70%;
+.gallery-item img {
+	max-width: 100%;
 	height: auto;
-	display: block; 
-	margin: 0; 
-	padding: 0; 
+	display: block;
+}
+
+.gallery-item {
+	width: 200px; 
+	height: auto; 
 }
 
 #flavor-grid-container {
