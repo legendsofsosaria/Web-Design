@@ -122,32 +122,9 @@ h4 {
 }
 
 /* =============================================
-	Audio and Video
+	Image Layout
    =============================================
 */
-#background-music {
-  display: block;
-  margin: 0 auto;
-}
-
-.media-container {
-  text-align: center;
-}
-
-video {
-	width: 40%;
-	max-width: 100%;
-}
-
-/* =============================================
-	Images
-   =============================================
-*/
-.gallery-item img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 
 #about-image {
   width: 300px; 
@@ -159,14 +136,17 @@ video {
   max-width: 100%;
 }
 
-.image-box img {
-    max-width: 50%; 
-    height: auto;    
-    opacity: 0.6;
+.image-box {
+    width: 100%; 
+	height: 600px;
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
 }
 
 #image-column {
-    padding: 40px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -175,76 +155,17 @@ video {
     height: auto;
 }
 
-@media only screen and (max-width: 460px) {
-  .gallery-item img {
-    max-width: 50%; 
-  }
-  .image-box img {
-        flex-basis: 50%; /* Two images in a row */
-    }
-}
-
-@media only screen and (max-width: 768px) {
-  .gallery-item img {
-    max-width: 70%; 
-  }
-  .image-box img {
-        flex-basis: 100%; /* One image in a row */
-    }
-}
-
-/* =============================================
-	Top Bar
-   =============================================
-*/
-
-nav {
-	text-align: center;
-	margin-bottom: 40px;
-}
-
-/* Style list items (links) */
-.top-bar li {
-  display: inline-block;
-  margin-right: 10px; 
-}
-
-/* Style link text */
-.top-bar a {
-  text-decoration: none;
-  display: inline-block;
-  color: #5b8b75; 
-  padding: 10px; 
-  font-size: 2.6vw;
-}
-
-/* Style visited link text */
-.top-bar a:visited {
-  text-decoration: none;
-  display: inline-block;
-  color: #5b8b75; 
-  padding: 10px; 
-  font-size: 2.6vw;
-}
-
-/* Hover effect for links */
-.top-bar a:hover {
-  background-color: #ccfff2; 
-  border-radius: 5px;
-  color: #000000;  
-}
-
 /* =============================================
 	Grids
    =============================================
 */
 
 #gallery-grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 10px;
-  max-width: 100%; 
-  margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 10px;
+	max-width: 100%; 
+	margin: 0 auto;
 }
 
 #flavor-grid-container {
@@ -263,6 +184,11 @@ nav {
 	text-align: center;
 	font-size: 1.5vw;
 }
+
+/* =============================================
+	Lists
+   =============================================
+*/
 
 ul {
 	margin: 0;

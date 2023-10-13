@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* =============================================
+	Top Bar
+   =============================================
+*/
+
+nav {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+/* Style list items (links) */
+.top-bar li {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+/* Style link text */
+.top-bar a {
+	text-decoration: none;
+	display: inline-block;
+	color: #5b8b75; 
+	padding: 10px; 
+	font-size: 2.6vw;
+	transform: scale(1,1) translateY(0px);
+	transition: color 1.2s linear,
+				transform 1.2s linear,
+				text-shadow 1.2s linear 1.2s;
+}
+
+/* Style visited link text */
+.top-bar a:visited {
+	text-decoration: none;
+	display: inline-block;
+	color: #5b8b75; 
+	padding: 10px; 
+	font-size: 2.6vw;
+}
+
+/* Hover effect for links */
+.top-bar a:hover {
+	background-color: #ccfff2; 
+	border-radius: 5px;
+	color: rgb(0, 0, 0);
+	text-shadow: rgba(0, 0, 0, 0.5) 0px 15px 4px;
+	transform: scale(1.2,1.2) translateY(-15px); 
+}
+
+/* Style the first link differently */
+.top-bar li:first-of-type:hover {
+    font-style: italic; 
+}
+
+/* Style the last link differently */
+.top-bar li:last-of-type:hover {
+    font-style: italic; 
+}

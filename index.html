@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art & Pastry</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="multimedia.css">
+	<link rel="stylesheet" type="text/css" href="nav.css">
 </head>
 <body class="flex-layout">
 	<header class="header">
@@ -30,10 +32,7 @@
 		</div>
 		<div id="image-column">
 			<div class="image-box">
-				<a href="gallery.html"><img src="Assets/pipingbags.jpg"></a>
-				<a href="gallery.html"><img src="Assets/cupcakedecorate.jpg"></a>
-				<a href="gallery.html"><img src="Assets/decoratecake.jpg" alt="Baby Boy Cake"></a>
-				<a href="gallery.html"><img src="Assets/cocoacake.jpg" alt="Unicorn Cake"></a>
+				<a href="gallery.html"><img id="slideshow" src="Assets/decoratecake.jpg"></a>
 			</div>
 		</div>
 		<div class="media-container">
@@ -47,5 +46,23 @@
         <p>&#x1F382; &copy; Art & Pastry 2023 &#x1F382;</p>
     </footer>
 </div>
+<script>
+const images = ['Assets/pipingbags.jpg', 'Assets/decoratecake.jpg', 'Assets/cocoacake.jpg', 'Assets/cupcakedecorate.jpg'];
+let currentImage = 0;
+const slideshow = document.getElementById('slideshow');
+
+// Hide all images except the first one initially
+for (let i = 1; i < images.length; i++) {
+    const img = new Image();
+    img.src = images[i];
+}
+
+function changeImage() {
+    currentImage = (currentImage + 1) % images.length;
+    slideshow.src = images[currentImage];
+}
+
+setInterval(changeImage, 2000); //
+</script>
 </body>
 </html>

@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* =============================================
+	Audio and Video
+   =============================================
+*/
+#background-music {
+  display: block;
+  margin: 0 auto;
+}
+
+.media-container {
+  text-align: center;
+}
+
+video {
+	width: 40%;
+	max-width: 100%;
+}
+
+/* =============================================
+	Images
+   =============================================
+*/
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-box img {
+	width: 80%;
+    height: auto;
+	opacity: 0.6;
+}
+
+/* =============================================
+	Image Media Queries
+   =============================================
+*/
+
+@media only screen and (max-width: 460px) {
+  .gallery-item img {
+    max-width: 50%; 
+  }
+  .image-box img {
+        flex-basis: 50%; /* Two images in a row */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery-item img {
+    max-width: 70%; 
+  }
+  .image-box img {
+        flex-basis: 100%; /* One image in a row */
+    }
+}
