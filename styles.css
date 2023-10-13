@@ -130,8 +130,13 @@ h4 {
   margin: 0 auto;
 }
 
-.audio-container {
+.media-container {
   text-align: center;
+}
+
+video {
+	width: 40%;
+	max-width: 100%;
 }
 
 /* =============================================
