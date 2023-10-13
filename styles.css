@@ -36,7 +36,9 @@ body {
     color: #000000;
     min-height: 100vh;
     background-image: url("Assets/background.jpg");
-    background-color: #b3f0ff;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-color: #e4dfd9;
 }
 
 .flex-layout {
@@ -61,6 +63,7 @@ main {
 	padding: 10px;
     border: 4px double #ccc;
     border-radius: 10px;
+	border-color: rgb(141, 170, 195);
 	text-align: center;
 }
 	
@@ -81,7 +84,7 @@ main {
   font-size: 2em; 
   margin-right: 0.1em; 
   line-height: 1; 
-  color: rgba(255, 255, 230, 0.4);
+  color: rgba(141, 170, 195, 0.4);
 }
 
 /* =============================================
@@ -93,12 +96,12 @@ main {
     text-align: center;
     border-style: double;
     border-width: 3px;
-    border-color: rgb(255, 255, 222);
+    border-color: rgb(99, 32, 63);
     font-family: 'LoversQuarrel', sans-serif;
     font-size: 8.8vw;
     font-weight: 300;
-    color: rgb(255, 255, 222);
-	margin: 0;
+    color: rgb(99, 32, 63);
+	margin: 0 0 40px 0;
 }
 
 h2 {
@@ -152,29 +155,37 @@ h4 {
 }
 
 .image-box img {
-    width: 120px; 
-    height: 155px;
-	opacity: 0.6;
+    max-width: 50%; 
+    height: auto;    
+    opacity: 0.6;
 }
 
 #image-column {
     padding: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
 }
 
 @media only screen and (max-width: 460px) {
   .gallery-item img {
     max-width: 50%; 
   }
+  .image-box img {
+        flex-basis: 50%; /* Two images in a row */
+    }
 }
 
 @media only screen and (max-width: 768px) {
   .gallery-item img {
     max-width: 70%; 
   }
+  .image-box img {
+        flex-basis: 100%; /* One image in a row */
+    }
 }
 
 /* =============================================
@@ -184,7 +195,7 @@ h4 {
 
 nav {
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 /* Style list items (links) */
@@ -197,7 +208,7 @@ nav {
 .top-bar a {
   text-decoration: none;
   display: inline-block;
-  color: #ffff99; 
+  color: #5b8b75; 
   padding: 10px; 
   font-size: 2.6vw;
 }
@@ -206,16 +217,16 @@ nav {
 .top-bar a:visited {
   text-decoration: none;
   display: inline-block;
-  color: #ffff99; 
+  color: #5b8b75; 
   padding: 10px; 
   font-size: 2.6vw;
 }
 
 /* Hover effect for links */
 .top-bar a:hover {
-  background-color: #35869b; 
+  background-color: #ccfff2; 
   border-radius: 5px;
-  color: #ffffde;  
+  color: #000000;  
 }
 
 /* =============================================
@@ -227,7 +238,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 10px;
-  max-width: 100%; /* Adjust the container width as needed */
+  max-width: 100%; 
   margin: 0 auto;
 }
 
