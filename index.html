@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="multimedia.css">
 	<link rel="stylesheet" type="text/css" href="nav.css">
+	<script src="images.js" defer></script>
 </head>
 <body class="flex-layout">
 	<header class="header">
@@ -49,23 +50,5 @@
 		</div>
         <p>&#x1F382; &copy; Art & Pastry Bakery 2023 &#x1F382;</p>
     </footer>
-<script>
-const images = ['Assets/pipingbags.jpg', 'Assets/decoratecake.jpg', 'Assets/cocoacake.jpg', 'Assets/cupcakedecorate.jpg'];
-let currentImage = 0;
-const slideshow = document.getElementById('slideshow');
-
-// Hide all images except the first one initially
-for (let i = 1; i < images.length; i++) {
-    const img = new Image();
-    img.src = images[i];
-}
-
-function changeImage() {
-    currentImage = (currentImage + 1) % images.length;
-    slideshow.src = images[currentImage];
-}
-
-setInterval(changeImage, 2000); //
-</script>
 </body>
 </html>
