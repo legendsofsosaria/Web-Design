@@ -20,7 +20,7 @@ fieldset {
     display: flex;
 	display: -webkit-flex;
     flex-direction: column;
-	webkit-flex-direction: column;
+	-webkit-flex-direction: column;
     margin-bottom: 10px;
 }
 
@@ -44,4 +44,16 @@ textarea, input {
     .formRow {
         margin-right: 0;
     }
+}
+
+div#buttons {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	width: 15%;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-top: 10px;
 }

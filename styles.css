@@ -146,13 +146,13 @@ h5 {
 */
 
 #about-image {
-  width: 300px; 
-  height: auto; 
-  float: right; 
-  margin: 0 20px 40px 0; 
-  transform: rotate(5deg) scale(0.9, 0.9);
-  box-shadow: rgb(101, 101, 101) 10px -10px 25px;
-  max-width: 100%;
+	width: 300px; 
+	height: auto; 
+	float: right; 
+	margin: 0 20px 40px 0; 
+	transform: rotate(5deg) scale(0.9, 0.9);
+	box-shadow: rgb(101, 101, 101) 10px -10px 25px;
+	max-width: 100%;
 }
 
 .image-box {
@@ -230,7 +230,7 @@ div#clock {
    display: flex;
    display: -webkit-flex;
    flex-direction: row;
-   webkit-flex-direction: row;
+   -webkit-flex-direction: row;
    align-items: center;
    justify-content: center;
    text-align: center;
