@@ -130,7 +130,7 @@ h4 {
 	font-weight: normal;
 }
 
-h5 {
+h5, h6 {
 	font-family: 'DancingScript', sans-serif;
 	color: rgb(255, 255, 255);
 	font-size: 2.4vw;
@@ -254,4 +254,37 @@ div#clock div {
 
 div#clock div span {
    font-size: 2.1em;   
+}
+
+/* =============================================
+Contact positioning
+================================================
+*/
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 400px; 
+}
+
+.contact-box {
+    position: relative;
+    width: 40%;
+    background-color: hsla(240, 100%, 95%, 65%);
+}
+
+#bakery-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%; 
+    object-fit: cover;
+	padding: 5px;
+}
+
+#heading-box {
+	padding: 20px;
 }
