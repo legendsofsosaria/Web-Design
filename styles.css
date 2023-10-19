@@ -77,6 +77,7 @@ main {
     border-color: hsla(60, 100%, 94%, 0.3);
 	margin-top: 40px;
 	text-align: center;
+	clear: both;
 }
 
 #footer-box p {
@@ -266,13 +267,14 @@ Contact positioning
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    height: 400px; 
+    min-height: 400px; 
 }
 
 .contact-box {
-    position: relative;
+    position: absolute;
     width: 40%;
     background-color: hsla(240, 100%, 95%, 65%);
+	text-align: center;
 }
 
 #bakery-image {
@@ -287,4 +289,14 @@ Contact positioning
 
 #heading-box {
 	padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.contact-box {
+		width: 50%;
+		}
+	#bakery-image {
+		width: 50%;
+		height: auto;
+	}
 }
