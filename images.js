@@ -1,25 +1,34 @@
 "use strict";
 
 /*
-   Index Image Slideshow
+   Photo Gallery Transform
    Author: Elizabeth Gress
-   Date:  10/19/2023 
+   Date:  11/07/2023 
 
 */
+/* Event works once HTML document is loaded */
+document.addEventListener("DOMContentLoaded", function() {
 
-const images = ['Assets/pipingbags.jpg', 'Assets/decoratecake.jpg', 'Assets/cocoacake.jpg', 'Assets/cupcakedecorate.jpg'];
-let currentImage = 0;
-const slideshow = document.getElementById('slideshow');
+  /* Get reference in HTML to modal */
+  var modal = document.getElementById("imgModal");
 
-// Hide all images except the first one initially
-for (let i = 1; i < images.length; i++) {
-    const img = new Image();
-    img.src = images[i];
-}
+  /* Gather all images with gallery-item class into a NodeList */
+  var images = document.querySelectorAll(".gallery-item img");
+  var modalImg = document.getElementById("img");
 
-function changeImage() {
-    currentImage = (currentImage + 1) % images.length;
-    slideshow.src = images[currentImage];
-}
+  /* Iterate through each image in the NodeList */
+  images.forEach(image => {
+      image.onclick = function() {
+          modal.style.display = "block";
+          modalImg.src = this.src; /* Sets src of model to clicked src */
+      }
+  });
+ /* Finds the close element */
+  var span = document.querySelector(".close");
 
-setInterval(changeImage, 2000); //
+  if (span) {
+      span.onclick = function() { /* On click, set modal display to none, effectively hiding the modal */
+          modal.style.display = "none";
+      }
+  }
+});
