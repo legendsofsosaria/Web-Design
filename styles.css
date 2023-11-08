@@ -203,12 +203,12 @@ h5, h6 {
    =============================================
 */
 
-ul {
+.Flavors ul {
 	margin: 0;
 	padding: 0;
 }
 
-li {
+.Flavors li {
 	list-style-type: none;
 }
 
