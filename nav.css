@@ -6,8 +6,14 @@
 */
 
 nav {
-	text-align: center;
-	margin-bottom: 30px;
+	display: flex;
+    align-items: center;
+    background: black; 
+	margin-bottom: 20px;
+}
+
+.menu.show-menu {
+    display: block;
 }
 
 /* Style list items (links) */
@@ -20,39 +26,53 @@ nav {
 .top-bar a {
 	text-decoration: none;
 	display: inline-block;
-	color: #5b8b75; 
-	padding: 10px; 
-	font-size: 2.6vw;
+	color: white; 
+	padding: 2px; 
 	transform: scale(1,1) translateY(0px);
-	transition: color 1.2s linear,
-				transform 1.2s linear,
-				text-shadow 1.2s linear 1.2s;
+	transition: all 1.2s;
+	font-size: 2.1vw;
 }
 
 /* Style visited link text */
 .top-bar a:visited {
 	text-decoration: none;
 	display: inline-block;
-	color: #5b8b75; 
-	padding: 10px; 
-	font-size: 2.6vw;
+	color: white; 
+	padding: 2px; 
 }
 
 /* Hover effect for links */
 .top-bar a:hover {
 	background-color: #ccfff2; 
 	border-radius: 5px;
-	color: rgb(0, 0, 0);
+	color: gray;
 	text-shadow: rgba(0, 0, 0, 0.5) 0px 15px 4px;
 	transform: scale(1.2,1.2) translateY(-15px); 
 }
 
-/* Style the first link differently */
-.top-bar li:first-of-type:hover {
+/* Style the first and last link differently */
+.top-bar li:first-of-type:hover, 
+.top-bar li:last-of-type:hover {
     font-style: italic; 
 }
 
-/* Style the last link differently */
-.top-bar li:last-of-type:hover {
-    font-style: italic; 
+.navicon {
+    font-size: 32px; 
+    cursor: pointer;
+	margin-right: 10px;
+}
+
+/* =============================================
+	Media Queries
+   =============================================
+*/
+
+/* Hide the menu by default only on smaller screens (mobile devices) */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+	.top-bar a {
+		font-size: 14px;
+	}
 }

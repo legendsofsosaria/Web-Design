@@ -10,6 +10,7 @@ https://unsplash.com/photos/nyJY9UZnkrE // background
 https://unsplash.com/photos/ZL8UKfJ1wtQ //background
 https://www.pexels.com/video/a-person-decorating-a-cake-7525507/
 https://unsplash.com/photos/person-inside-bakery-shop-jN_M0McVNeI
+https://opengameart.org/content/happy-lullaby-song17
 
 websites:
 https://whitesailsbakery.com/
@@ -17,4 +18,8 @@ http://lfbakeryhalifax.com/
 https://www.notjustcakessweetstudio.com/
 https://contactgeekygamers.wixsite.com/my-site-3
 
-https://www.geeksforgeeks.org/how-to-make-the-images-bigger-when-clicked/
+Technical Information:
+https://www.w3schools.com/howto/howto_css_modal_images.asp // How to do a modal image
+https://www.w3schools.com/howto/howto_js_slideshow.asp // How to create slideshow
+https://www.w3schools.com/howto/howto_js_redirect_webpage.asp //How to redirect webpage in JS
+https://www.w3schools.com/howto/howto_js_mobile_navbar.asp //How to show/hide nav bar for mobile devices

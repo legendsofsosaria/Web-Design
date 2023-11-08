@@ -42,23 +42,11 @@ textarea, input {
 
 /* Input background color and images */
 
-input#fname:focus:valid,
-input#lname:focus:valid,
-input#street:focus:valid,
-input#city:focus:valid,
-input#province:focus:valid,
-input#postal-code:focus:valid,
-input#phone:focus:valid {
+input[type="text"]:focus:valid {
 	background: hsl(180, 100%, 95%);
 }
 
-input#fname:focus:invalid,
-input#lname:focus:invalid,
-input#street:focus:invalid,
-input#city:focus:invalid,
-input#state:focus:invalid,
-input#zip:focus:invalid,
-input#phone:focus:invalid {
+input[type="text"]:focus:invalid {
 	background: hsl(0, 100%, 90%);
 }
 

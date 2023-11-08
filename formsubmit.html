@@ -6,13 +6,16 @@
     <title>Art & Pastry</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="nav.css">
+	<script src="JavaScript/nav.js" defer></script>
 </head>
 <body class="flex-layout">
 	<header class="header">
         <h1>Art & Pastry</h1>
     </header>
 	<nav>
-       <ul class="top-bar">
+	<div class="navicon" onclick="toggleMenu()">&#x1F9C1;</div>
+    <div id="myLinks" class="menu">
+		<ul class="top-bar">
            <li><a href="index.html">Home</a></li>
            <li><a href="about.html">About</a></li>
 		   <li><a href="gallery.html">Gallery</a></li>
@@ -21,6 +24,7 @@
 		   <li><a href="contact.html">Contact</a></li>
 		   <li><a href="references.html">References</a></li>
        </ul>
+	</div>
     </nav>
 <div class="site-content">
     <main>

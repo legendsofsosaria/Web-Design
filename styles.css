@@ -66,6 +66,10 @@ main {
 	border-color: rgb(141, 170, 195);
 	text-align: center;
 }
+
+.drop-cap + p {
+	font-style: italic;
+}
 	
 .footer {
     color: #ffffde;
@@ -203,12 +207,12 @@ h5, h6 {
    =============================================
 */
 
-.Flavors ul {
+.Flavors > ul {
 	margin: 0;
 	padding: 0;
 }
 
-.Flavors li {
+.Flavors > li {
 	list-style-type: none;
 }
 
