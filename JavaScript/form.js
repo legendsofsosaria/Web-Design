@@ -34,6 +34,7 @@ window.addEventListener("load", function() {
 
          /* Send alert for valid info */
          alert("Your order has been submitted!");
+         window.location.href = "formsubmit.html";
 
          /* Clear the form */
          document.getElementById("fname").value = "";
