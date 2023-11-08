@@ -76,17 +76,19 @@ video {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 500px){
-  .modal-content {
-    width: 100%;
-  }
-}
-
 /* =============================================
 	Images
    =============================================
 */
+#bakery-image {
+    position: relative;
+	left: 150px;
+    width: 40%;
+    height: 100%; 
+    object-fit: cover;
+	padding: 60px;
+}
+
 .gallery-item img:hover {
 	opacity: 0.7;
 }
@@ -104,11 +106,7 @@ video {
 	width: 80%;
     height: auto;
 	opacity: 0.6;
-}
-
-.footer img {
-	width: 100%;
-	height: auto;
+	padding-bottom: 20px;
 }
 
 .image-box {
@@ -118,6 +116,8 @@ video {
     align-items: center;
     position: relative;
     padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 50px;
 }
 
 .slideshow {
@@ -126,13 +126,15 @@ video {
     text-align: center;
     margin-bottom: 40px;
 	padding-bottom: 20px;
+	overflow: hidden; 
 }
 
 .slideshow img {
-    max-width: 50%;
-    max-height: 100%;
-    height: 60vh;
-	object-fit: cover;
+    width: auto;
+	max-width: 100%;
+    height: auto;
+	max-height: calc(100vh - 100px);
+	object-fit: contain;
 }
 
 .audio {
@@ -140,6 +142,11 @@ video {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.footer img {
+	width: 100%;
+	height: auto;
 }
 
 /* =============================================
@@ -151,16 +158,34 @@ video {
   .gallery-item img {
     max-width: 50%; 
   }
-  .image-box img {
-        flex-basis: 50%; /* Two images in a row */
-    }
 }
 
 @media only screen and (max-width: 768px) {
   .gallery-item img {
     max-width: 70%; 
   }
-  .image-box img {
-        flex-basis: 100%; /* One image in a row */
+	#image-column {
+		height: 50vh;
+	}
+	.contact-box {
+		position: static;
+		margin: 20px;
+	}
+	.image-box img {
+		width: 90%;
+	}
+	#bakery-image {
+        position: relative;
+        left: 0; 
+        width: 90%; 
+        height: auto;
+        padding: 20px; 
     }
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 500px){
+  .modal-content {
+    width: 100%;
+  }
 }

@@ -8,20 +8,25 @@
 	<link rel="stylesheet" type="text/css" href="multimedia.css">
 	<link rel="stylesheet" type="text/css" href="nav.css">
 	<script src="JavaScript/clock.js" defer></script>
+	<script src="JavaScript/nav.js" defer></script>
 </head>
 <body>
 	<header class="header">
         <h1>Art & Pastry</h1>
     </header>
     <nav>
-        <ul class="top-bar">
-            <li><a href="index.html">Home</a></li>
+	<div class="navicon" onclick="toggleMenu()">&#x1F9C1;</div>
+    <div id="myLinks" class="menu">
+		<ul class="top-bar">
+           <li><a href="index.html">Home</a></li>
            <li><a href="about.html">About</a></li>
 		   <li><a href="gallery.html">Gallery</a></li>
 		   <li><a href="flavors.html">Flavors & Pricing</a></li>
 		   <li><a href="order.html">Cake Order Form</a></li>
 		   <li><a href="contact.html">Contact</a></li>
-        </ul>
+		   <li><a href="references.html">References</a></li>
+       </ul>
+	</div>
     </nav>
 <div class="site-content">
 	<h5>Time Since Our Grand Opening</h5>
@@ -35,10 +40,9 @@
 		<main>
 			<h2>About Our Bakery</h2>
 			<img src="Assets/elizabeth.jpg" alt="Elizabeth House" id="about-image">
-			<p>Art & Pastry is a home-based bakery owned and operated by Elizabeth House. Elizabeth is professional Pastry Chef with over 11 years of experience. 
+			<p class="about-info">Art & Pastry is a home-based bakery owned and operated by Elizabeth House. Elizabeth is professional Pastry Chef with over 11 years of experience. 
 			She got her degree in Patisserie and Baking from Le Cordon Bleu. She grew up in a small town in Pennsylvania, and worked in restaurants, bakeries, casinos, 
 			and hotels in Pennsylvania, Washington DC, and Maryland. Her goal is to provide customers with creative and delicious scratch baked pastries and cakes.</p>
-			
 			<div class="media-container">
 				<video controls>
 					<source src="Assets/decoratecakedemo.mp4" type="video/mp4" />
