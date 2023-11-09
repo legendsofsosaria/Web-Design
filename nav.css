@@ -56,10 +56,33 @@ nav {
     font-style: italic; 
 }
 
+/* =============================================
+	Nav Icon
+   =============================================
+*/
+.menu-text {
+    color: white;
+    font-size: 18px;
+}
+
+.cupcake-icon {
+    margin-bottom: 5px; 
+	font-size: 32px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .navicon {
-    font-size: 32px; 
+    display: flex;
+    align-items: center;
+    font-size: 32px;
     cursor: pointer;
-	margin-right: 10px;
+    margin-right: 10px;
+
 }
 
 /* =============================================
@@ -76,3 +99,4 @@ nav {
 		font-size: 14px;
 	}
 }
+
