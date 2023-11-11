@@ -5,133 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art & Pastry</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="multimedia.css">
-	<link rel="stylesheet" type="text/css" href="nav.css">
-	<script src="JavaScript/nav.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="multimedia.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <script src="JavaScript/nav.js" defer></script>
 </head>
 <body>
-<header class="header">
+    <header class="header">
         <h1>Art & Pastry</h1>
     </header>
     <nav>
-	<div class="navicon" onclick="toggleMenu()">
-        <div class="icon-container">
-            <span class="cupcake-icon">&#x1F9C1;</span>
-            <span class="menu-text">Menu</span>
+        <div class="navicon" onclick="toggleMenu()">
+            <div class="icon-container">
+                <span class="cupcake-icon">&#x1F9C1;</span>
+                <span class="menu-text">Menu</span>
+            </div>
+            <div id="myLinks" class="menu">
+                <ul class="top-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="flavors.html">Flavors & Pricing</a></li>
+                    <li><a href="order.html">Cake Order Form</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
         </div>
-    <div id="myLinks" class="menu">
-		<ul class="top-bar">
-           <li><a href="index.html">Home</a></li>
-           <li><a href="about.html">About</a></li>
-		   <li><a href="gallery.html">Gallery</a></li>
-		   <li><a href="flavors.html">Flavors & Pricing</a></li>
-		   <li><a href="order.html">Cake Order Form</a></li>
-		   <li><a href="contact.html">Contact</a></li>
-		   <li><a href="references.html">References</a></li>
-       </ul>
-	</div>
     </nav>
-	<main>
-		<p>Interested in a quote? <a href="contact.html">Contact Us</a> to inquire about your special occasion.
-		We require 72 hours notice for standard cakes and 2 weeks notice for tiered cakes or large orders.
-		Please note, we can only fill orders for pick-up at the Farmers' Markets in Windsor when they are in season.</p>
-	</main>
-	<div id="flavor-grid-container">
-		<div id="flavor-item">
-		<h3>Cake Flavors</h3>
-		<ul class="Flavors">
-			<li>Vanilla</li>
-			<li>Chocolate</li>
-			<li>Marble</li>
-			<li>Cinnamon</li>
-			<li>Carrot</li>
-			<li>Coconut</li>
-			<li>Confetti</li>
-			<li>Oreo</li>
-			<li>White Chocolate</li>
-			<li>Mocha</li>
-			<li>Red Velvet</li>
-			<li>Chocolate Mint</li>
-			<li>Lemon</li>
-		</ul>
-		</div>
-		<div id="flavor-item">
-		<h3>Buttercreams</h3>
-		<ul class="Flavors">
-			<li>Vanilla</li>
-			<li>Chocolate</li>
-			<li>Cinnamon</li>
-			<li>Peanut Butter</li>
-			<li>Oreo</li>
-			<li>Coffee</li>
-			<li>Salted Caramel</li>
-			<li>Chocolate Mint</li>
-			<li>Mint</li>
-			<li>Cream Cheese Frosting</li>
-		</ul>
-		</div>
-		
-		<div id="flavor-item">
-		<h3>Extras</h3>
-		<ul class="Flavors">
-			<li>Peach Compote</li>
-			<li>Black Raspberry Jam</li>
-			<li>Strawberry Jam</li>
-			<li>Coconut Garnish <em>(Toasted or Untoasted)</em></li>
-			<li>Confetti Sprinkles</li>
-			<li>White Chocolate Curls</li>
-			<li>Dark Chocolate Curls</li>
-			<li>Vanilla Cake Crumbs</li>
-			<li>Chocolate Cake Crumbs</li>
-			<li>Toasted Walnuts</li>
-			<li>Oreo Crumbs</li>
-			<li>Toasted Pecans</li>
-			<li>Oreos(Whole)</li>
-			<li>Ganache <em>(White or Dark Chocolate)</em></li>
-			<li>Reese's Peanut Butter Cups</li>
-			<li>Graham Cracker Crumbs</li>
-		</ul>
-		</div>
-		
-		<div id="flavor-item">
-		<h3>Buttercream Cake Sizes</h3>
-		<ul class="Flavors">
-			<li>4" round - Starting at $15</li>
-			<li>6" round - Starting at $36</li>
-			<li>8" round - Starting at $65</li>
-			<li>Quarter Sheet (9"x14") - Starting at $65</li>
-			<li>10" round - Starting at $91</li>
-		</ul>
-		</div>
-		
-		<div id="flavor-item">
-		<h3>Fondant Cake Sizes</h3>
-		<ul class="Flavors">
-			<li>4" round - Starting at $22</li>
-			<li>6" round - Starting at $50</li>
-			<li>8" round - Starting at $80</li>
-			<li>10" round - Starting at $110</li>
-		</ul>
-		</div>
-		
-		<div id="flavor-item">
-		<h3>Cupcakes</h3>
-		<ul class="Flavors">
-			<li>$32/dozen for standard flavors</li>
-			<li>$36/dozen for premium flavors</li>
-			<br>
-			<li><em>**Additional fee for fondant toppers or individual boxes**</em></li>
-		</ul>
-		</div>
-	
-	</div>
-	<footer class="footer">
-		<div id="footer-box">
-			<a href="https://www.facebook.com/ArtandPastry"><img src="Assets/FBIcon.jpg"></a>
-			<a href="https://www.instagram.com/artandpastry/"><img src="Assets/InstagramIcon.jpg"></a>
-		</div>
-        <p>&#x1F382; &copy; Art & Pastry Bakery &#x1F382;<br>
-		Last Updated: November 2023</p>
+    <main>
+        <p>
+            Interested in a quote? <a href="contact.html">Contact Us</a> to inquire about your special occasion.
+            We require 72 hours notice for standard cakes and 2 weeks notice for tiered cakes or large orders.
+            Please note, we can only fill orders for pick-up at the Farmers' Markets in Windsor when they are in season.
+        </p>
+    </main>
+    <div id="flavor-grid-container">
+        <div class="flavor-item">
+            <h3>Cake Flavors</h3>
+            <ul class="Flavors">
+                <li>Vanilla</li>
+                <li>Chocolate</li>
+                <li>Marble</li>
+                <li>Cinnamon</li>
+                <li>Carrot</li>
+                <li>Coconut</li>
+                <li>Confetti</li>
+                <li>Oreo</li>
+                <li>White Chocolate</li>
+                <li>Mocha</li>
+                <li>Red Velvet</li>
+                <li>Chocolate Mint</li>
+                <li>Lemon</li>
+            </ul>
+        </div>
+        <div class="flavor-item">
+            <h3>Buttercreams</h3>
+            <ul class="Flavors">
+                <li>Vanilla</li>
+                <li>Chocolate</li>
+                <li>Cinnamon</li>
+                <li>Peanut Butter</li>
+                <li>Oreo</li>
+                <li>Coffee</li>
+                <li>Salted Caramel</li>
+                <li>Chocolate Mint</li>
+                <li>Mint</li>
+                <li>Cream Cheese Frosting</li>
+            </ul>
+        </div>
+
+        <div class="flavor-item">
+            <h3>Extras</h3>
+            <ul class="Flavors">
+                <li>Peach Compote</li>
+                <li>Black Raspberry Jam</li>
+                <li>Strawberry Jam</li>
+                <li>Coconut Garnish <em>(Toasted or Untoasted)</em></li>
+                <li>Confetti Sprinkles</li>
+                <li>White Chocolate Curls</li>
+                <li>Dark Chocolate Curls</li>
+                <li>Vanilla Cake Crumbs</li>
+                <li>Chocolate Cake Crumbs</li>
+                <li>Toasted Walnuts</li>
+                <li>Oreo Crumbs</li>
+                <li>Toasted Pecans</li>
+                <li>Oreos(Whole)</li>
+                <li>Ganache <em>(White or Dark Chocolate)</em></li>
+                <li>Reese's Peanut Butter Cups</li>
+                <li>Graham Cracker Crumbs</li>
+            </ul>
+        </div>
+
+        <div class="flavor-item">
+            <h3>Buttercream Cake Sizes</h3>
+            <ul class="Flavors">
+                <li>4" round - Starting at $15</li>
+                <li>6" round - Starting at $36</li>
+                <li>8" round - Starting at $65</li>
+                <li>Quarter Sheet (9"x14") - Starting at $65</li>
+                <li>10" round - Starting at $91</li>
+            </ul>
+        </div>
+
+        <div class="flavor-item">
+            <h3>Fondant Cake Sizes</h3>
+            <ul class="Flavors">
+                <li>4" round - Starting at $22</li>
+                <li>6" round - Starting at $50</li>
+                <li>8" round - Starting at $80</li>
+                <li>10" round - Starting at $110</li>
+            </ul>
+        </div>
+
+        <div class="flavor-item">
+            <h3>Cupcakes</h3>
+            <ul class="Flavors">
+                <li>$32/dozen for standard flavors</li>
+                <li>$36/dozen for premium flavors</li>
+                <li><em>**Additional fee for fondant toppers or individual boxes**</em></li>
+            </ul>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div id="footer-box">
+            <a href="https://www.facebook.com/ArtandPastry"><img src="Assets/FBIcon.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/artandpastry/"><img src="Assets/InstagramIcon.jpg" alt="Instagram"></a>
+        </div>
+        <p>
+            &#x1F382; &copy; Art & Pastry Bakery &#x1F382;<br>
+            Last Updated: November 2023
+        </p>
     </footer>
 </body>
 </html>

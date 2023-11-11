@@ -1,21 +1,18 @@
 @charset "utf-8";
 
-@font-face 
-{
-  font-family: 'LoversQuarrel';
-  src: url('Fonts/LoversQuarrel-Regular.ttf') format('truetype');
+@font-face {
+    font-family: 'LoversQuarrel';
+    src: url('Fonts/LoversQuarrel-Regular.ttf') format('truetype');
 }
 
-@font-face 
-{
-  font-family: 'Megila';
-  src: url('Fonts/Megila.otf') format('opentype');
+@font-face {
+    font-family: 'Megila';
+    src: url('Fonts/Megila.otf') format('opentype');
 }
 
-@font-face 
-{
-  font-family: 'DancingScript';
-  src: url('Fonts/DancingScript.ttf') format('truetype');
+@font-face {
+    font-family: 'DancingScript';
+    src: url('Fonts/DancingScript.ttf') format('truetype');
 }
 
 /*
@@ -36,56 +33,56 @@ body {
     color: #000000;
     min-height: 100vh;
     background-image: url("Assets/background.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #e4dfd9;
 }
 
 .flex-layout {
-	display: flex;
-	display: -webkit-flex;
-	-webkit-flex-direction: column;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
     flex-direction: column;
 }
 
 .site-content {
-	width: 50%; 
-	margin: auto;
+    width: 50%;
+    margin: auto;
 }
 
 main {
     margin: 0 auto;
     max-width: 960px;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .main-column, h2 {
-	padding: 10px;
+    padding: 10px;
     border: 4px double #ccc;
     border-radius: 10px;
-	border-color: rgb(141, 170, 195);
-	text-align: center;
+    border-color: rgb(141, 170, 195);
+    text-align: center;
 }
 
-.contact-box p  {
-	font-size: 1.4rem;
+.contact-box p {
+    font-size: 1.4rem;
 }
 
 .drop-cap + p {
-	font-style: italic;
+    font-style: italic;
 }
-	
+
 .footer {
     color: #ffffde;
     font-size: 1.2vw;
     padding: 10px;
-    background-color: #000; 
-	border-style: double;
+    background-color: #000;
+    border-style: double;
     border-width: 3px;
     border-color: hsla(60, 100%, 94%, 0.3);
-	margin-top: 40px;
-	text-align: center;
-	clear: both;
+    margin-top: 40px;
+    text-align: center;
+    clear: both;
 }
 
 #footer-box p {
@@ -93,16 +90,16 @@ main {
 }
 
 #footer-box a {
-	float: left;
+    float: left;
     margin-right: 10px;
-	width: 4%;
+    width: 4%;
 }
 
 .drop-cap::first-letter {
-  font-size: 2em; 
-  margin-right: 0.1em; 
-  line-height: 1; 
-  color: rgba(0, 51, 102, 0.4);
+    font-size: 2em;
+    margin-right: 0.1em;
+    line-height: 1;
+    color: rgba(0, 51, 102, 0.4);
 }
 
 /* =============================================
@@ -119,36 +116,35 @@ main {
     font-size: 8.8vw;
     font-weight: 300;
     color: rgb(99, 32, 63);
-	margin: 0 0 40px 0;
+    margin: 0 0 40px 0;
 }
 
 h2 {
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	max-width: 60%;
-	text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    max-width: 60%;
+    text-align: center;
 }
 
 h3 {
-	font-family: 'DancingScript', sans-serif;
-	color: rgb(0, 96, 128);
-	font-size: 2.4vw;
-	margin: 5px;
-	padding: 10px;
+    font-family: 'DancingScript', sans-serif;
+    color: rgb(0, 96, 128);
+    font-size: 2.4vw;
+    margin: 5px;
+    padding: 10px;
 }
 
 h4 {
-	font-size: 2.5vw;
-	font-weight: normal;
+    font-size: 2.5vw;
+    font-weight: normal;
 }
 
 h5, h6 {
-	font-family: 'DancingScript', sans-serif;
-	color: rgb(255, 255, 255);
-	font-size: 2.4vw;
-	margin: 5px;
-	text-align: center;
-	text-shadow: 0px 0px 2px black, 0px 0px 4px black, -1px 1px 8px white, 
-                1px -1px 8px white, -1px 1px 12px white, 1px -1px 12px white;
+    font-family: 'DancingScript', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 2.4vw;
+    margin: 5px;
+    text-align: center;
+    text-shadow: 0px 0px 2px black, 0px 0px 4px black, -1px 1px 8px white, 1px -1px 8px white, -1px 1px 12px white, 1px -1px 12px white;
 }
 
 /* =============================================
@@ -157,30 +153,30 @@ h5, h6 {
 */
 
 #gallery-grid-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-	grid-gap: 10px;
-	max-width: 100%; 
-	margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 #flavor-grid-container {
-	display: flex;
-	display: -webkit-flex;
-	flex-wrap: wrap;
-	-webkit-flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: baseline;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-#flavor-item {
-	flex: 0 0 calc(33.33% - 10px); 
-	background-color: rgba(255, 255, 255, 0.2);
-	margin-bottom: 10px; 
-	box-sizing: border-box;
-	border-radius: 60px;
-	text-align: center;
-	font-size: 1.5vw;
+.flavor-item {
+    flex: 0 0 calc(33.33% - 10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 1.5vw;
 }
 
 /* =============================================
@@ -189,71 +185,71 @@ h5, h6 {
 */
 
 .Flavors > ul {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .Flavors > li {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 #flavor-item ul {
-	padding: 10px;
-	list-style: none;
+    padding: 10px;
+    list-style: none;
 }
 
-#references-box {
+.references-box {
     padding: 10px;
     margin: 20px;
 }
 
-#links {
+.links {
     display: inline-block;
     width: 20%;
     min-width: 100px;
-	text-align: center;
+    text-align: center;
     vertical-align: top;
-	margin-left: 20px;
-	background-color: hsla(271, 100%, 90%, 60%);
-	border-radius: 20px;
-	padding: 15px;
-	box-shadow: rgba(0, 0, 0, 25%) 0px 54px 55px, rgba(0, 0, 0, 25%) 0px -12px 30px, rgba(0, 0, 0, 25%) 0px 4px 6px, rgba(0, 0, 0, 25%) 0px 12px 13px, rgba(0, 0, 0, 25%) 0px -3px 5px;
-	margin-right: 20px;
+    margin-left: 20px;
+    background-color: hsla(271, 100%, 90%, 60%);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 25%) 0px 54px 55px, rgba(0, 0, 0, 25%) 0px -12px 30px, rgba(0, 0, 0, 25%) 0px 4px 6px, rgba(0, 0, 0, 25%) 0px 12px 13px, rgba(0, 0, 0, 25%) 0px -3px 5px;
+    margin-right: 20px;
 }
 
-#links ul {
+.links ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-#links li a {
+.links li a {
     margin-bottom: 5px;
-	text-decoration: none;
-	color: rgb(0, 153, 115);
-	font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 153, 115);
+    font-weight: bold;
 }
 
-#links li a:hover {
-	text-decoration: none;
-	color: rgb(0, 102, 77);
-	text-shadow: rgba(0, 0, 0, 0.5) 0px 15px 4px;
+.links li a:hover {
+    text-decoration: none;
+    color: rgb(0, 102, 77);
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 15px 4px;
 }
 
-#links li a:visited {
-	text-decoration: none;
-	color: rgb(153, 0, 115);
+.links li a:visited {
+    text-decoration: none;
+    color: rgb(153, 0, 115);
 }
 
-#references-content {
+.references-content {
     display: inline-block;
-	text-align: center;
+    text-align: center;
     width: 40%;
     background-color: hsla(315, 100%, 90%, 70%);
-	border-radius: 60px;
+    border-radius: 60px;
     padding: 10px;
     box-sizing: border-box;
-	box-shadow: rgba(0, 0, 0, 25%) 0px 54px 55px, rgba(0, 0, 0, 25%) 0px -12px 30px, rgba(0, 0, 0, 25%) 0px 4px 6px, rgba(0, 0, 0, 25%) 0px 12px 13px, rgba(0, 0, 0, 25%) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 25%) 0px 54px 55px, rgba(0, 0, 0, 25%) 0px -12px 30px, rgba(0, 0, 0, 25%) 0px 4px 6px, rgba(0, 0, 0, 25%) 0px 12px 13px, rgba(0, 0, 0, 25%) 0px -3px 5px;
 }
 
 /* =============================================
@@ -262,16 +258,16 @@ Styles for the Countdown Clock
 */
 
 div#clock {
-   width: 45%;
-   display: flex;
-   display: -webkit-flex;
-   flex-direction: row;
-   -webkit-flex-direction: row;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   margin: 0 auto;
-   padding-top: 10px;
+    width: 45%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
 }
 
 div#clock div {
@@ -284,12 +280,11 @@ div#clock div {
    margin: 0px 10px;
    color: white;
    text-align: center;
-   text-shadow: 0px 0px 2px black, 0px 0px 4px black, -1px 1px 8px white, 
-                1px -1px 8px white, -1px 1px 12px white, 1px -1px 12px white;
+   text-shadow: 0px 0px 2px black, 0px 0px 4px black, -1px 1px 8px white, 1px -1px 8px white, -1px 1px 12px white, 1px -1px 12px white;
 }
 
 div#clock div span {
-   font-size: 2.1em;   
+    font-size: 2.1em;
 }
 
 /* =============================================
@@ -303,20 +298,20 @@ Contact positioning
     margin: 0 auto;
     padding: 20px;
     min-height: 400px;
-	box-sizing: border-box;	
+    box-sizing: border-box;
 }
 
 .contact-box {
     position: absolute;
     width: 40%;
     background-color: hsla(240, 100%, 95%, 65%);
-	text-align: center;
-	padding: 5px;
-	margin-bottom: 40px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 40px;
 }
 
 #heading-box {
-	padding: 20px;
+    padding: 20px;
 }
 
 /* =============================================
@@ -324,21 +319,25 @@ Media Queries
 ================================================
 */
 @media screen and (max-width: 768px) {
-	.contact-box {
-		width: 50%;
-		}
-	#bakery-image {
-		width: 50%;
-		height: auto;
-	}
-	p {
-		font-size: 10px;
-	}
-	p.about-info {
-		background-color: rgba(255, 255, 255, .45);
-		padding: 20px;
-	}
-	#flavor-container {
+    .contact-box {
+        width: 50%;
+    }
+
+    #bakery-image {
+        width: 50%;
+        height: auto;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    p.about-info {
+        background-color: rgba(255, 255, 255, .45);
+        padding: 20px;
+    }
+
+    #flavor-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -351,38 +350,40 @@ Media Queries
         margin-bottom: 10px;
         box-sizing: border-box;
         border-radius: 60px;
-        text-align: center; 
+        text-align: center;
         font-size: 2.2vw;
     }
 }
 
 @media screen and (max-width: 768px) {
-	.container {
-        padding: 10px; 
+    .container {
+        padding: 10px;
     }
+
     .contact-box {
-        position: static; 
-        width: 90%; 
-        margin: 0 auto; 
+        position: static;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 768px), (max-zoom: 68%) {
     .contact-box {
-        position: static; 
-        width: 90%; 
-        margin: 0 auto; 
-		bottom: 20px;
-		top: 20px;
+        position: static;
+        width: 90%;
+        margin: 0 auto;
+        bottom: 20px;
+        top: 20px;
     }
-	
-	.contact-box p  {
-		font-size: 1.8vw;
-	}
+
+    .contact-box p {
+        font-size: 1.8vw;
+    }
 }
+
 @media only screen and (max-width: 600px) {
-    #links, #references-content {
+    #links, .references-content {
         width: 75%;
-        margin: 0 0 10px 0; 
+        margin: 0 0 10px 0;
     }
 }

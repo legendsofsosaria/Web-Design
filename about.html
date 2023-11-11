@@ -5,63 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art & Pastry</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="multimedia.css">
-	<link rel="stylesheet" type="text/css" href="nav.css">
-	<script src="JavaScript/clock.js" defer></script>
-	<script src="JavaScript/nav.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="multimedia.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <script src="JavaScript/clock.js" defer></script>
+    <script src="JavaScript/nav.js" defer></script>
 </head>
 <body>
-	<header class="header">
+    <header class="header">
         <h1>Art & Pastry</h1>
     </header>
     <nav>
-	<div class="navicon" onclick="toggleMenu()">
-        <div class="icon-container">
-            <span class="cupcake-icon">&#x1F9C1;</span>
-            <span class="menu-text">Menu</span>
+        <div class="navicon" onclick="toggleMenu()">
+            <div class="icon-container">
+                <span class="cupcake-icon">&#x1F9C1;</span>
+                <span class="menu-text">Menu</span>
+            </div>
+            <div id="myLinks" class="menu">
+                <ul class="top-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="flavors.html">Flavors & Pricing</a></li>
+                    <li><a href="order.html">Cake Order Form</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
         </div>
-    <div id="myLinks" class="menu">
-		<ul class="top-bar">
-           <li><a href="index.html">Home</a></li>
-           <li><a href="about.html">About</a></li>
-		   <li><a href="gallery.html">Gallery</a></li>
-		   <li><a href="flavors.html">Flavors & Pricing</a></li>
-		   <li><a href="order.html">Cake Order Form</a></li>
-		   <li><a href="contact.html">Contact</a></li>
-		   <li><a href="references.html">References</a></li>
-       </ul>
-	</div>
     </nav>
-<div class="site-content">
-	<h5>Time Since Our Grand Opening</h5>
-	<div id="clock">
-			<div><span id="years">58</span><br />Years</div>
+    <div class="site-content">
+        <h5>Time Since Our Grand Opening</h5>
+        <div id="clock">
+            <div><span id="years">58</span><br />Years</div>
             <div><span id="months">10</span><br />Months</div>
             <div><span id="days">14</span><br />Days</div>
-			<div><span id="hrs">6</span><br />Hours</div>
-			<div><span id="mins">2</span><br />Minutes</div>
-	</div>
-		<main>
-			<h2>About Our Bakery</h2>
-			<img src="Assets/elizabeth.jpg" alt="Elizabeth House" id="about-image">
-			<p class="about-info">Art & Pastry is a home-based bakery owned and operated by Elizabeth House. Elizabeth is professional Pastry Chef with over 11 years of experience. 
-			She got her degree in Patisserie and Baking from Le Cordon Bleu. She grew up in a small town in Pennsylvania, and worked in restaurants, bakeries, casinos, 
-			and hotels in Pennsylvania, Washington DC, and Maryland. Her goal is to provide customers with creative and delicious scratch baked pastries and cakes.</p>
-			<div class="media-container">
-				<video controls>
-					<source src="Assets/decoratecakedemo.mp4" type="video/mp4" />
-					<p><em>To play this video clip, your browser needs to support HTML5.</em></p>
-				</video>
-			</div>
-		</main>
-</div>
-	<footer class="footer">
-		<div id="footer-box">
-			<a href="https://www.facebook.com/ArtandPastry"><img src="Assets/FBIcon.jpg"></a>
-			<a href="https://www.instagram.com/artandpastry/"><img src="Assets/InstagramIcon.jpg"></a>
-		</div>
-        <p>&#x1F382; &copy; Art & Pastry Bakery &#x1F382;<br>
-		Last Updated: November 2023</p>
+            <div><span id="hrs">6</span><br />Hours</div>
+            <div><span id="mins">2</span><br />Minutes</div>
+        </div>
+        <main>
+            <h2>About Our Bakery</h2>
+            <img src="Assets/elizabeth.jpg" alt="Elizabeth House" id="about-image">
+            <p class="about-info">
+                Art & Pastry is a home-based bakery owned and operated by Elizabeth House. Elizabeth is professional Pastry Chef with over 11 years of experience.
+                She got her degree in Patisserie and Baking from Le Cordon Bleu. She grew up in a small town in Pennsylvania, and worked in restaurants, bakeries, casinos,
+                and hotels in Pennsylvania, Washington DC, and Maryland. Her goal is to provide customers with creative and delicious scratch baked pastries and cakes.
+            </p>
+            <div class="media-container">
+                <video controls>
+                    <source src="Assets/decoratecakedemo.mp4" type="video/mp4" />
+                    <p><em>To play this video clip, your browser needs to support HTML5.</em></p>
+                </video>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div id="footer-box">
+            <a href="https://www.facebook.com/ArtandPastry"><img src="Assets/FBIcon.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/artandpastry/"><img src="Assets/InstagramIcon.jpg" alt="Instagram"></a>
+        </div>
+        <p>
+            &#x1F382; &copy; Art & Pastry Bakery &#x1F382;<br>
+            Last Updated: November 2023
+        </p>
     </footer>
 </body>
 </html>

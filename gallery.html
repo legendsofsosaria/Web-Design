@@ -5,118 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art & Pastry</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="multimedia.css">
-	<link rel="stylesheet" type="text/css" href="nav.css">
-	<script src="JavaScript/images.js" defer></script>
-	<script src="JavaScript/nav.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="multimedia.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <script src="JavaScript/images.js" defer></script>
+    <script src="JavaScript/nav.js" defer></script>
 </head>
 <body>
-	<header class="header">
-		<h1>Art & Pastry</h1>
-	</header>
+    <header class="header">
+        <h1>Art & Pastry</h1>
+    </header>
     <nav>
-	<div class="navicon" onclick="toggleMenu()">
-        <div class="icon-container">
-            <span class="cupcake-icon">&#x1F9C1;</span>
-            <span class="menu-text">Menu</span>
+        <div class="navicon" onclick="toggleMenu()">
+            <div class="icon-container">
+                <span class="cupcake-icon">&#x1F9C1;</span>
+                <span class="menu-text">Menu</span>
+            </div>
+            <div id="myLinks" class="menu">
+                <ul class="top-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="flavors.html">Flavors & Pricing</a></li>
+                    <li><a href="order.html">Cake Order Form</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
         </div>
-    <div id="myLinks" class="menu">
-		<ul class="top-bar">
-           <li><a href="index.html">Home</a></li>
-           <li><a href="about.html">About</a></li>
-		   <li><a href="gallery.html">Gallery</a></li>
-		   <li><a href="flavors.html">Flavors & Pricing</a></li>
-		   <li><a href="order.html">Cake Order Form</a></li>
-		   <li><a href="contact.html">Contact</a></li>
-		   <li><a href="references.html">References</a></li>
-       </ul>
-	</div>
     </nav>
-	<div id="gallery-grid-container">
-		<div class="gallery-item">
-			<img src="Assets/Unicorn.jpg" alt="Unicorn Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/HarryPotter.jpg" alt="Harry Potter Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/HobbitHole.jpg" alt="Hobbit Hole Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/ItsABoy.jpg" alt="Baby Shower Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/Ocean.jpg" alt="Ocean Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/CookieMonster.jpg" alt="Cookie Monster Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/Beach.jpg" alt="Beach Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/Bow.jpg" alt="Bow Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/Oreo.jpg" alt="Oreo Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/TieredDaisy.jpg" alt="Tiered Daisy Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/Watercolor.bmp" alt="Watercolor Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/CherryBlossom.jpg" alt="Cherry Blossom Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/RoseTiered.jpg" alt="Tiered Rose Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/Rose.jpg" alt="Rose Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/Present.jpg" alt="Present Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/Buttercup.bmp" alt="Buttercup Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/Marley.jpg" alt="Bob Marley Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/PeppaPig.jpg" alt="Peppa Pig Cake">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/RoseCupcake.jpg" alt="Rose Cupcakes">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/SweetPotato.jpg" alt="Sweet Potato Cupcakes">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/MapleBacon.jpg" alt="Maple Bacon Cupcakes">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/OreoCupcake.jpg" alt="Oreo Cupcakes">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/PBCupcake.jpg" alt="Peanut Butter Cupcakes">
-		</div>
-		<div class="gallery-item">
-			<img src="Assets/SwirlCupcakes.jpg" alt="Swirl Cupcakes">
-		</div>
-	</div>
-	<div id="imgModal" class="modal">
+    <div id="gallery-grid-container">
+        <div class="gallery-item">
+            <img src="Assets/Unicorn.jpg" alt="Unicorn Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/HarryPotter.jpg" alt="Harry Potter Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/HobbitHole.jpg" alt="Hobbit Hole Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/ItsABoy.jpg" alt="Baby Shower Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/Ocean.jpg" alt="Ocean Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/CookieMonster.jpg" alt="Cookie Monster Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/Beach.jpg" alt="Beach Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/Bow.jpg" alt="Bow Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/Oreo.jpg" alt="Oreo Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/TieredDaisy.jpg" alt="Tiered Daisy Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/Watercolor.bmp" alt="Watercolor Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/CherryBlossom.jpg" alt="Cherry Blossom Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/RoseTiered.jpg" alt="Tiered Rose Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/Rose.jpg" alt="Rose Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/Present.jpg" alt="Present Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/Buttercup.bmp" alt="Buttercup Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/Marley.jpg" alt="Bob Marley Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/PeppaPig.jpg" alt="Peppa Pig Cake">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/RoseCupcake.jpg" alt="Rose Cupcakes">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/SweetPotato.jpg" alt="Sweet Potato Cupcakes">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/MapleBacon.jpg" alt="Maple Bacon Cupcakes">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/OreoCupcake.jpg" alt="Oreo Cupcakes">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/PBCupcake.jpg" alt="Peanut Butter Cupcakes">
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/SwirlCupcakes.jpg" alt="Swirl Cupcakes">
+        </div>
+    </div>
+    <div id="imgModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img">
     </div>
-	<footer class="footer">
-		<div id="footer-box">
-			<a href="https://www.facebook.com/ArtandPastry"><img src="Assets/FBIcon.jpg"></a>
-			<a href="https://www.instagram.com/artandpastry/"><img src="Assets/InstagramIcon.jpg"></a>
-		</div>
-        <p>&#x1F382; &copy; Art & Pastry Bakery &#x1F382;<br>
-		Last Updated: November 2023</p>
+    <footer class="footer">
+        <div id="footer-box">
+            <a href="https://www.facebook.com/ArtandPastry"><img src="Assets/FBIcon.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/artandpastry/"><img src="Assets/InstagramIcon.jpg" alt="Instagram"></a>
+        </div>
+        <p>
+            &#x1F382; &copy; Art & Pastry Bakery &#x1F382;<br>
+            Last Updated: November 2023
+        </p>
     </footer>
 </body>
 </html>

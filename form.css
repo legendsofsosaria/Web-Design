@@ -7,20 +7,20 @@ Date: 09/18/2023
 
 .flex-container {
     display: flex;
-	display: -webkit-flex;
+    display: -webkit-flex;
 }
 
 fieldset {
-	padding: 10px 10px;
-	margin: 5px;
-	width: 30%;
+    padding: 10px 10px;
+    margin: 5px;
+    width: 30%;
 }
 
 .formRow {
     display: flex;
-	display: -webkit-flex;
+    display: -webkit-flex;
     flex-direction: column;
-	-webkit-flex-direction: column;
+    -webkit-flex-direction: column;
     margin-bottom: 10px;
 }
 
@@ -32,22 +32,22 @@ fieldset {
 
 textarea, input {
     width: 100%;
-	height: 40%;
+    height: 40%;
 }
 
 #cakeType select {
-    width: 100%; 
-    max-width: 100%; 
+    width: 100%;
+    max-width: 100%;
 }
 
 /* Input background color and images */
 
 input[type="text"]:focus:valid {
-	background: hsl(180, 100%, 95%);
+    background: hsl(180, 100%, 95%);
 }
 
 input[type="text"]:focus:invalid {
-	background: hsl(0, 100%, 90%);
+    background: hsl(0, 100%, 90%);
 }
 
 /* Media query for smaller screens */
@@ -58,13 +58,13 @@ input[type="text"]:focus:invalid {
 }
 
 div#buttons {
-	display: flex;
-	display: -webkit-flex;
-	flex-direction: row;
-	-webkit-flex-direction: row;
-	width: 15%;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0 auto;
-	padding-top: 10px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    width: 15%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 10px;
 }

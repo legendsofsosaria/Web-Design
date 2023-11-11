@@ -5,171 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art & Pastry</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="multimedia.css">
-	<link rel="stylesheet" type="text/css" href="nav.css">
-	<link rel="stylesheet" type="text/css" href="form.css">
-	<script src="JavaScript/form.js" defer></script>
-	<script src="JavaScript/nav.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="multimedia.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script src="JavaScript/form.js" defer></script>
+    <script src="JavaScript/nav.js" defer></script>
 </head>
 <body>
-	<header class="header">
+    <header class="header">
         <h1>Art & Pastry</h1>
     </header>
     <nav>
-	<div class="navicon" onclick="toggleMenu()">
-        <div class="icon-container">
-            <span class="cupcake-icon">&#x1F9C1;</span>
-            <span class="menu-text">Menu</span>
+        <div class="navicon" onclick="toggleMenu()">
+            <div class="icon-container">
+                <span class="cupcake-icon">&#x1F9C1;</span>
+                <span class="menu-text">Menu</span>
+            </div>
+            <div id="myLinks" class="menu">
+                <ul class="top-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="flavors.html">Flavors & Pricing</a></li>
+                    <li><a href="order.html">Cake Order Form</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
         </div>
-    <div id="myLinks" class="menu">
-		<ul class="top-bar">
-           <li><a href="index.html">Home</a></li>
-           <li><a href="about.html">About</a></li>
-		   <li><a href="gallery.html">Gallery</a></li>
-		   <li><a href="flavors.html">Flavors & Pricing</a></li>
-		   <li><a href="order.html">Cake Order Form</a></li>
-		   <li><a href="contact.html">Contact</a></li>
-		   <li><a href="references.html">References</a></li>
-       </ul>
-	</div>
     </nav>
-	<form id="order" action="formsubmit.html">
-		<div class="flex-container">
-			<fieldset id="contactInfo" class="formSection">
-			<legend>Contact Information</legend>
-		
-			<div class="formRow">
-				<label for="fname">First Name*</label>
-				<input name="custfName" id="fname" type="text" placeholder="first name" required />
-			</div>
-			
-			<div class="formRow">
-				<label for="lname">Last Name*</label>
-				<input name="custlName" id="lname" type="text" placeholder="last name" required />
-			</div>
-		
-			<div class="formRow">
-				<label for="street">Street address*</label>
-				<input name="custStreet" id="street" type="text" required />
-			</div>
-		
-			<div class="formRow">
-				<label for="city">City*</label>
-				<input name="custCity" id="city" type="text" required />
-			</div>
-		
-			<div class="formRow">
-				<label for="province">Province*</label>
-				<input name="custProvince" id="province" type="text" required />
-			</div>
-		
-			<div class="formRow">
-			<label for="postal-code">Postal Code*</label>
-			<input name="postalCode" id="postal-code" type="text" placeholder="A1A 1A1" 
-			pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required />
-			</div>
-		
-			<div class="formRow">
-				<label for="phone">Phone number*</label>
-				<input name="custPhone" id="phone" type="tel" placeholder="(999) 999-9999" 
-				pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
-			</div>
-			</fieldset>
-			
-			<fieldset id="cakeType" class="formSection">
-			<legend>Cake Information</legend>
-			
-			<div class="formRow">
-				<label for="flavor">Cake Flavor</label>
-				<select name="cakeFlavor" id="flavor">
-					<option value="flavor1" selected>Vanilla</option>
-					<option value="flavor2">Chocolate</option>
-					<option value="flavor3">Marble</option>
-					<option value="flavor4">Cinnamon</option>
-					<option value="flavor5">Carrot</option>
-					<option value="flavor6">Coconut</option>
-					<option value="flavor7">Confetti</option>
-					<option value="flavor8">Oreo</option>
-					<option value="flavor9">White Chocolate</option>
-					<option value="flavor10">Mocha</option>
-					<option value="flavor11">Red Velvet</option>
-					<option value="flavor12">Chocolate Mint</option>
-					<option value="flavor13">Lemon</option>
-				</select>
-			</div>
-			
-			<div class="formRow">
-				<label for="buttercream">Buttercream Flavor</label>
-				<select name="buttercreamFlavor" id="buttercream">
-					<option value="buttercream1" selected>Vanilla</option>
-					<option value="buttercream2">Chocolate</option>
-					<option value="buttercream3">Cinnamon</option>
-					<option value="buttercream4">Peanut Butter</option>
-					<option value="buttercream5">Oreo</option>
-					<option value="buttercream6">Coffee</option>
-					<option value="buttercream7">Salted Caramel</option>
-					<option value="buttercream8">Chocolate Mint</option>
-					<option value="buttercream9">Mint</option>
-					<option value="buttercream10">Cream Cheese Frosting</option>
-				</select>
-			</div>
-			
-			<div class="formRow">
-				<label for="extras">Extras</label>
-				<select name="extraToppings" id="extras">
-					<option value="extra1" selected>None</option>
-					<option value="extra2">Peach Compote</option>
-					<option value="extra3">Black Raspberry Jam</option>
-					<option value="extra4">Strawberry Jam</option>
-					<option value="extra5">Untoasted Coconut</option>
-					<option value="extra6">Toasted Coconut</option>
-					<option value="extra7">Confetti Sprinkles</option>
-					<option value="extra8">White Chocolate Curls</option>
-					<option value="extra9">Dark Chocolate Curls</option>
-					<option value="extra10">Vanilla Cake Crumbs</option>
-					<option value="extra11">Chocolate Cake Crumbs</option>
-					<option value="extra12">Toasted Walnuts</option>
-					<option value="extra13">Oreo Crumbs</option>
-					<option value="extra14">Toasted Pecans</option>
-					<option value="extra15">Oreos(Whole)</option>
-					<option value="extra16">White Chocolate Ganache</option>
-					<option value="extra17">Dark Chocolate Ganache</option>
-					<option value="extra18">Reese's Peanut Butter Cups</option>
-					<option value="extra19">Graham Cracker Crumbs</option>
-					<option value="extra20">Fondant</option>
-				</select>
-			</div>
-			
-			<div class="formRow">
-				<label for="sizes">Sizes</label>
-				<select name="cakeSizes" id="sizes">
-					<option value="size1">4"</option>
-					<option value="size2" selected>6"</option>
-					<option value="size3">8"</option>
-					<option value="size4">Quarter Sheet (9"x14")</option>
-					<option value="size5">10"</option>
-					<option value="size6">Dozen Cupcakes</option>
-				</select>
-			</div>
-			</fieldset>
-		
-			<div class="formSection">
-				<label for="reqBox">Any special requests on your order?</label>
-				<textarea name="specReq" id="reqBox"></textarea>
-			</div>
-		</div>
-		
-		<div id="buttons">
-			<input type="submit" id="submit" value="Submit" class="button" />
-			<input type="button" id="cancel" value="Cancel" class="button" />
-		</div>
-	<footer class="footer">
-		<div id="footer-box">
-			<a href="https://www.facebook.com/ArtandPastry"><img src="Assets/FBIcon.jpg"></a>
-			<a href="https://www.instagram.com/artandpastry/"><img src="Assets/InstagramIcon.jpg"></a>
-		</div>
-        <p>&#x1F382; &copy; Art & Pastry Bakery &#x1F382;<br>
-		Last Updated: November 2023</p>
+    <form id="order" action="formsubmit.html">
+        <div class="flex-container">
+            <fieldset id="contactInfo" class="formSection">
+                <legend>Contact Information</legend>
+
+                <div class="formRow">
+                    <label for="fname">First Name*</label>
+                    <input name="custfName" id="fname" type="text" placeholder="first name" required />
+                </div>
+
+                <div class="formRow">
+                    <label for="lname">Last Name*</label>
+                    <input name="custlName" id="lname" type="text" placeholder="last name" required />
+                </div>
+
+                <div class="formRow">
+                    <label for="street">Street address*</label>
+                    <input name="custStreet" id="street" type="text" required />
+                </div>
+
+                <div class="formRow">
+                    <label for="city">City*</label>
+                    <input name="custCity" id="city" type="text" required />
+                </div>
+
+                <div class="formRow">
+                    <label for="province">Province*</label>
+                    <input name="custProvince" id="province" type="text" required />
+                </div>
+
+                <div class="formRow">
+                    <label for="postal-code">Postal Code*</label>
+                    <input name="postalCode" id="postal-code" type="text" placeholder="A1A 1A1"
+                           pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required />
+                </div>
+
+                <div class="formRow">
+                    <label for="phone">Phone number*</label>
+                    <input name="custPhone" id="phone" type="tel" placeholder="(999) 999-9999"
+                           pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+                </div>
+            </fieldset>
+
+            <fieldset id="cakeType" class="formSection">
+                <legend>Cake Information</legend>
+
+                <div class="formRow">
+                    <label for="flavor">Cake Flavor</label>
+                    <select name="cakeFlavor" id="flavor">
+                        <option value="flavor1" selected>Vanilla</option>
+                        <option value="flavor2">Chocolate</option>
+                        <option value="flavor3">Marble</option>
+                        <option value="flavor4">Cinnamon</option>
+                        <option value="flavor5">Carrot</option>
+                        <option value="flavor6">Coconut</option>
+                        <option value="flavor7">Confetti</option>
+                        <option value="flavor8">Oreo</option>
+                        <option value="flavor9">White Chocolate</option>
+                        <option value="flavor10">Mocha</option>
+                        <option value="flavor11">Red Velvet</option>
+                        <option value="flavor12">Chocolate Mint</option>
+                        <option value="flavor13">Lemon</option>
+                    </select>
+                </div>
+
+                <div class="formRow">
+                    <label for="buttercream">Buttercream Flavor</label>
+                    <select name="buttercreamFlavor" id="buttercream">
+                        <option value="buttercream1" selected>Vanilla</option>
+                        <option value="buttercream2">Chocolate</option>
+                        <option value="buttercream3">Cinnamon</option>
+                        <option value="buttercream4">Peanut Butter</option>
+                        <option value="buttercream5">Oreo</option>
+                        <option value="buttercream6">Coffee</option>
+                        <option value="buttercream7">Salted Caramel</option>
+                        <option value="buttercream8">Chocolate Mint</option>
+                        <option value="buttercream9">Mint</option>
+                        <option value="buttercream10">Cream Cheese Frosting</option>
+                    </select>
+                </div>
+
+                <div class="formRow">
+                    <label for="extras">Extras</label>
+                    <select name="extraToppings" id="extras">
+                        <option value="extra1" selected>None</option>
+                        <option value="extra2">Peach Compote</option>
+                        <option value="extra3">Black Raspberry Jam</option>
+                        <option value="extra4">Strawberry Jam</option>
+                        <option value="extra5">Untoasted Coconut</option>
+                        <option value="extra6">Toasted Coconut</option>
+                        <option value="extra7">Confetti Sprinkles</option>
+                        <option value="extra8">White Chocolate Curls</option>
+                        <option value="extra9">Dark Chocolate Curls</option>
+                        <option value="extra10">Vanilla Cake Crumbs</option>
+                        <option value="extra11">Chocolate Cake Crumbs</option>
+                        <option value="extra12">Toasted Walnuts</option>
+                        <option value="extra13">Oreo Crumbs</option>
+                        <option value="extra14">Toasted Pecans</option>
+                        <option value="extra15">Oreos(Whole)</option>
+                        <option value="extra16">White Chocolate Ganache</option>
+                        <option value="extra17">Dark Chocolate Ganache</option>
+                        <option value="extra18">Reese's Peanut Butter Cups</option>
+                        <option value="extra19">Graham Cracker Crumbs</option>
+                        <option value="extra20">Fondant</option>
+                    </select>
+                </div>
+
+                <div class="formRow">
+                    <label for="sizes">Sizes</label>
+                    <select name="cakeSizes" id="sizes">
+                        <option value="size1">4"</option>
+                        <option value="size2" selected>6"</option>
+                        <option value="size3">8"</option>
+                        <option value="size4">Quarter Sheet (9"x14")</option>
+                        <option value="size5">10"</option>
+                        <option value="size6">Dozen Cupcakes</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <div class="formSection">
+                <label for="reqBox">Any special requests on your order?</label>
+                <textarea name="specReq" id="reqBox"></textarea>
+            </div>
+        </div>
+
+        <div id="buttons">
+            <input type="submit" id="submit" value="Submit" class="button" />
+            <input type="button" id="cancel" value="Cancel" class="button" />
+        </div>
+    </form>
+    <footer class="footer">
+        <div id="footer-box">
+            <a href="https://www.facebook.com/ArtandPastry"><img src="Assets/FBIcon.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/artandpastry/"><img src="Assets/InstagramIcon.jpg" alt="Instagram"></a>
+        </div>
+        <p>
+            &#x1F382; &copy; Art & Pastry Bakery &#x1F382;<br>
+            Last Updated: November 2023
+        </p>
     </footer>
 </body>
 </html>

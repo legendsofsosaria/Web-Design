@@ -5,17 +5,17 @@
    =============================================
 */
 #background-music {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .media-container {
-  text-align: center;
+    text-align: center;
 }
 
 video {
-	width: 40%;
-	max-width: 100%;
+    width: 40%;
+    max-width: 100%;
 }
 /* =============================================
 	Modal Images (from w3schools)
@@ -23,57 +23,62 @@ video {
 */
 /* Enlarged state */
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.9); 
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
 }
 
 /* Modal Content (Image) */
 .modal-content {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  width: 40%;
-  max-width: 400px;
-  padding-top: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    max-width: 400px;
+    padding-top: 80px;
 }
 
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 /* The Close Button */
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
 }
 
 /* =============================================
@@ -81,13 +86,13 @@ video {
    =============================================
 */
 #about-image {
-	width: 300px; 
-	height: auto; 
-	float: right; 
-	margin: 0 20px 40px 0; 
-	transform: rotate(5deg) scale(0.9, 0.9);
-	box-shadow: rgb(101, 101, 101) 10px -10px 25px;
-	max-width: 100%;
+    width: 300px;
+    height: auto;
+    float: right;
+    margin: 0 20px 40px 0;
+    transform: rotate(5deg) scale(0.9, 0.9);
+    box-shadow: rgb(101, 101, 101) 10px -10px 25px;
+    max-width: 100%;
 }
 
 #image-column {
@@ -97,37 +102,37 @@ video {
     flex-wrap: wrap;
     max-width: 100%;
     height: 800vh;
-	overflow: hidden;
-	max-height: 800px;
+    overflow: hidden;
+    max-height: 800px;
 }
 
 #bakery-image {
     position: relative;
-	left: 150px;
+    left: 150px;
     width: 40%;
-    height: 100%; 
+    height: 100%;
     object-fit: cover;
-	padding: 60px;
+    padding: 60px;
 }
 
 .gallery-item img:hover {
-	opacity: 0.7;
+    opacity: 0.7;
 }
 
 .gallery-item img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .image-box img {
-	width: 80%;
+    width: 80%;
     height: auto;
-	opacity: 0.6;
-	padding-bottom: 20px;
+    opacity: 0.6;
+    padding-bottom: 20px;
 }
 
 .image-box {
@@ -137,8 +142,8 @@ video {
     align-items: center;
     position: relative;
     padding: 20px;
-	box-sizing: border-box;
-	margin-bottom: 50px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
 }
 
 .slideshow {
@@ -146,16 +151,16 @@ video {
     margin: auto;
     text-align: center;
     margin-bottom: 40px;
-	padding-bottom: 20px;
-	overflow: hidden; 
+    padding-bottom: 20px;
+    overflow: hidden;
 }
 
 .slideshow img {
     width: auto;
-	max-width: 100%;
+    max-width: 100%;
     height: auto;
-	max-height: calc(100vh - 100px);
-	object-fit: contain;
+    max-height: calc(100vh - 100px);
+    object-fit: contain;
 }
 
 .audio {
@@ -166,8 +171,8 @@ video {
 }
 
 .footer img {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 }
 
 /* =============================================
@@ -176,37 +181,40 @@ video {
 */
 
 @media only screen and (max-width: 460px) {
-  .gallery-item img {
-    max-width: 50%; 
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .gallery-item img {
-    max-width: 70%; 
-  }
-	#image-column {
-		height: 50vh;
-	}
-	.contact-box {
-		position: static;
-		margin: 20px;
-	}
-	.image-box img {
-		width: 90%;
-	}
-	#bakery-image {
-        position: relative;
-        left: 0; 
-        width: 90%; 
-        height: auto;
-        padding: 20px; 
+    .gallery-item img {
+        max-width: 50%;
     }
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 500px){
-  .modal-content {
-    width: 100%;
-  }
+@media only screen and (max-width: 768px) {
+    .gallery-item img {
+        max-width: 70%;
+    }
+
+    #image-column {
+        height: 50vh;
+    }
+
+    .contact-box {
+        position: static;
+        margin: 20px;
+    }
+
+    .image-box img {
+        width: 90%;
+    }
+
+    #bakery-image {
+        position: relative;
+        left: 0;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .modal-content {
+        width: 100%;
+    }
 }
