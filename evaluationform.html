@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Evaluation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+    <form id="feedbackForm" action="#" method="post">
+        <div class="flex-container">
+            <fieldset class="rateSection">
+                <legend>Design Ratings</legend>
+
+                <div class="rateSection">
+                    <label for="visual_appeal">Overall visual appeal:</label>
+                    <input type="range" id="visual_appeal" name="visual_appeal" min="1" max="5" step="1">
+                    <output for="visual_appeal">1 (Poor) - 5 (Excellent)</output>
+
+                    <label for="visual_nav">Navigation and ease of use:</label>
+                    <input type="range" id="visual_nav" name="visual_nav" min="1" max="5" step="1">
+                    <output for="visual_nav">1 (Poor) - 5 (Excellent)</output>
+
+                    <label for="visual_color">Color scheme and aesthetics:</label>
+                    <input type="range" id="visual_color" name="visual_color" min="1" max="5" step="1">
+                    <output for="visual_color">1 (Poor) - 5 (Excellent)</output>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="rateSection">
+                <legend>Usefulness</legend>
+
+                <div class="rateSection">
+                    <label for="use_relevant">Information Relevance:</label>
+                    <input type="range" id="use_relevant" name="use_relevant" min="1" max="5" step="1">
+                    <output for="use_relevant">1 (Poor) - 5 (Excellent)</output>
+
+                    <label for="use_effective">Effectiveness in providing desired info:</label>
+                    <input type="range" id="use_effective" name="use_effective" min="1" max="5" step="1">
+                    <output for="use_effective">1 (Poor) - 5 (Excellent)</output>
+
+                    <label for="use_interaction">Interaction and engagement:</label>
+                    <input type="range" id="use_interaction" name="use_interaction" min="1" max="5" step="1">
+                    <output for="use_interaction">1 (Poor) - 5 (Excellent)</output>
+                </div>
+            </fieldset>
+
+            <fieldset class="rateSection">
+                <legend>Overall Impression</legend>
+
+                <div class="rateSection">
+                    <label for="overall">Overall impression of website:</label>
+                    <input type="range" id="overall" name="overall" min="1" max="5" step="1">
+                    <output for="overall">1 (Poor) - 5 (Excellent)</output>
+                </div>
+            </fieldset>
+
+            <fieldset class="rateSection">
+                <legend>Comments and Suggestions</legend>
+
+                <div class="rateSection">
+                    <label for="commBox">Please provide any additional comments and suggestions you may have regarding the website.</label>
+                    <textarea id="commBox"></textarea>
+                </div>
+            </fieldset>
+        </div>
+
+        <div id="buttons">
+            <input type="submit" id="submitReview" value="Submit" class="button" />
+        </div>
+    </form>
+</body>
+</html>
