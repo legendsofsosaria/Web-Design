@@ -80,6 +80,27 @@ video {
 	Images
    =============================================
 */
+#about-image {
+	width: 300px; 
+	height: auto; 
+	float: right; 
+	margin: 0 20px 40px 0; 
+	transform: rotate(5deg) scale(0.9, 0.9);
+	box-shadow: rgb(101, 101, 101) 10px -10px 25px;
+	max-width: 100%;
+}
+
+#image-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: 800vh;
+	overflow: hidden;
+	max-height: 800px;
+}
+
 #bakery-image {
     position: relative;
 	left: 150px;
